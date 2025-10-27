@@ -12,7 +12,7 @@ This guide will help you get started with the Solace MCP Server in minutes.
 
 ```bash
 # Navigate to the project directory
-cd MCP-server-simulator-POC
+cd /path/to/solace-mcp-server
 
 # Build the project
 ./gradlew build
@@ -88,7 +88,7 @@ Add to your `claude_desktop_config.json`:
       "command": "java",
       "args": [
         "-jar",
-        "/full/path/to/build/libs/solace-mcp-server-1.0-SNAPSHOT-all.jar"
+        "/absolute/path/to/build/libs/solace-mcp-server-1.0-SNAPSHOT-all.jar"
       ]
     }
   }
