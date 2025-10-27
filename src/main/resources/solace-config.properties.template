@@ -1,0 +1,15 @@
+# Solace Connection Configuration Template
+# Copy this file to solace-config.properties and update with your values
+
+# Solace broker host (e.g., tcp://localhost:55555, tcps://your-broker.messaging.solace.cloud:55443)
+solace.host=tcp://localhost:55555
+
+# Message VPN name
+solace.vpn=default
+
+# Authentication credentials
+solace.username=default
+solace.password=default
+
+# Default topic for publishing (optional)
+solace.default.topic=mcp/solace/messages
