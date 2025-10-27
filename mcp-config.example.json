@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "solace": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/absolute/path/to/build/libs/solace-mcp-server-1.0-SNAPSHOT-all.jar"
+      ],
+      "description": "MCP server for sending messages to Solace PubSub+ brokers"
+    }
+  }
+}

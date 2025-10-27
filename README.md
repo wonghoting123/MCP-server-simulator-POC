@@ -6,6 +6,17 @@ A Model Context Protocol (MCP) server implementation for sending messages to Sol
 
 This MCP server provides tools for interacting with Solace PubSub+ message brokers, allowing you to send messages to topics through a standardized MCP interface. It implements the Model Context Protocol specification and uses the Solace Java API (JCSMP) for messaging operations.
 
+## Quick Start
+
+For a quick start guide, see [QUICKSTART.md](QUICKSTART.md).
+
+**TL;DR:**
+```bash
+./gradlew fatJar
+docker-compose up -d  # Start Solace broker
+./test-server.sh      # Test the server
+```
+
 ## Features
 
 - **MCP Protocol Support**: Implements MCP 2024-11-05 specification
@@ -136,6 +147,11 @@ echo '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"send_solac
 .
 ├── build.gradle                      # Gradle build configuration
 ├── settings.gradle                   # Gradle settings
+├── docker-compose.yml                # Docker Compose for local Solace broker
+├── mcp-config.example.json           # Example MCP client configuration
+├── test-server.sh                    # Bash script for testing the server
+├── example-client.py                 # Python example client
+├── QUICKSTART.md                     # Quick start guide
 ├── src/
 │   └── main/
 │       ├── java/
